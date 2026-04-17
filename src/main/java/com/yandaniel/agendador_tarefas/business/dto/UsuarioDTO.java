@@ -2,8 +2,6 @@ package com.yandaniel.agendador_tarefas.business.dto;
 
 import lombok.*;
 
-import java.util.List;
-
 @Getter
 @Setter
 @AllArgsConstructor
