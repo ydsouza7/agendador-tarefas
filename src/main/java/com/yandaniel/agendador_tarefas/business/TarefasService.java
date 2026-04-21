@@ -7,9 +7,11 @@ import com.yandaniel.agendador_tarefas.infrastructure.enums.StatusNotificacaoEnu
 import com.yandaniel.agendador_tarefas.infrastructure.repository.TarefasRepository;
 import com.yandaniel.agendador_tarefas.infrastructure.security.JwtUtil;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cglib.core.Local;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -30,5 +32,10 @@ public class TarefasService {
         return tarefaConverter.paraTarefasDTO(
                 tarefasRepository.save(entity));
     }
+
+    public List<TarefasDTO> buscaTarefasAgendadasPorPeriodo(LocalDateTime dataInicial, LocalDateTime dataFinal){
+        
+    }
+
 
 }
